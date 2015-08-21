@@ -7,7 +7,7 @@ words.txt.
 
 ##Exaple:
 
-user:~/Downloads/LongestCompWord$ python LogestWord.py
+user:~/Downloads/quiz-master$ python LogestWord.py
 
 Please enter the name of the file: words.txt
 
