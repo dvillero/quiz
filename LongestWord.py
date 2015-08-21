@@ -6,7 +6,8 @@ Created on Thu Aug 20 22:12:06 2015
 """
 import collections as Coll
 
-
+import time
+ti=time.time()
 class node:
     def __init__(self, l=None, isTerm=False):
         self.children={}
@@ -86,9 +87,13 @@ def longestCompWord(words):
                 queue.append((word,suffix[len(prefix):]))
                 
     return longestCompWord
-    
+
+
 if __name__ == '__main__':
     FILE=raw_input("Please enter the name of the file: ")
     words = open(FILE).read().split()
     longestword=longestCompWord(words)
     print "The longest compound word in the list is: ", longestword
+    tf=time.time()
+    ttotal=tf-ti
+    print "Code takes ", str(ttotal), " sec"
